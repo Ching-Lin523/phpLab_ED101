@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border:1px solid black;
+        }
+        td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>申請會員</h2>
+    <form action="02member.php" method="get">
+    <Table>
+        <tr>
+            <td>姓名:</td>
+            <td><input type="text" name="memName"></td>
+        </tr>
+        <tr>
+            <td>帳號:</td>
+            <td><input type="text" name="memId">最多8個文數字</td>
+        </tr><tr>
+            <td>密碼:</td>
+            <td><input type="password" name="memPsw">最多8個文數字</td>
+        </tr>
+    </tr><tr>
+        <td>e-mail:</td>
+        <td><input type="email" name="email" value="XXXXX@mail.com"></td>
+    </tr>
+    </tr><tr>
+        <td>性別:</td>
+        <td ><input type="radio" name="sex" value="boy">男<input type="radio" name="sex" value="girl">女</td>
+        
+    </tr>
+    </tr><tr>
+        <td>生日:</td>
+        <td><input type="text" name="birthday" value="1999-01-02"></td>
+    </tr>
+    </tr><tr>
+        <td>連絡電話:</td>
+        <td><input type="text" name="tel" value="09222222"></td>
+    </tr>
+    </Table>
+    <input type="submit" value="新增">
+    <input type="button" value="重新設定">
+</form>
+</body>
+</html>

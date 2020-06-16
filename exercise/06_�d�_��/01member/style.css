@@ -1,0 +1,22 @@
+.formTitle {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 15px;
+}
+input[type="submit"],
+input[type="submit"] {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+table {
+  border: 1px solid red;
+  border-collapse: collapse;
+  color: red;
+  background-color: gray;
+}
+td {
+  border: 1px solid red;
+  font-weight: bold;
+}

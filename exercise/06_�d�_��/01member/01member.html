@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01member</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form method="GET" action="02memberShow.php">
+      <div class="formTitle"><label for="name">姓名:</label></div>
+      <input type="text" name="name" id="name" /><br />
+
+      <div class="formTitle"><label for="account">帳號:</label></div>
+      <input type="text" name="account" id="account" /><br />
+
+      <div class="formTitle"><label for="pwd">密碼:</label></div>
+      <input type="password" name="pwd" id="pwd" /><br />
+
+      <div class="formTitle"><label for="email">E-mail:</label></div>
+      <input type="text" name="email" id="email" /><br />
+
+      <div class="formTitle"><label for="sex">姓別:</label></div>
+      <input type="radio" name="sex" id="male" value="M" />
+      <label for="male">男</label>
+      <input type="radio" name="sex" id="female" value="F" />
+      <label for="female">女</label><br />
+
+      <div class="formTitle"><label for="birthday">生日:</label></div>
+      <input type="date" name="birthday" id="birthday" /><br />
+
+      <div class="formTitle"><label for="tel">聯絡電話:</label></div>
+      <input type="text" name="tel" id="tel" /><br />
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

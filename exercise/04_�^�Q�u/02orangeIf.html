@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02orangeIf 橘子的單價和等級的關係</title>
+</head>
+<body>
+<style>
+    label,select,input,button{
+        padding:0.5rem;
+        margin: 0.2rem;
+    }
+    button{
+        font-weight: 900;
+        width: 300px;
+        background: orange;
+        border: 1px solid #333;
+        font-size:1rem;
+    }
+</style>
+<h2>作業2 : 輸入所購買的等級及公斤數</h2>
+<form method="get" action="02orangeIf.php">
+    <label for="">選擇橘子等級 :</label>
+    <select name="lv">
+        <option >1</option>
+        <option >2</option>
+        <option >3</option>
+    </select>
+    <br>
+    <label for="">輸入公斤數  : </label>
+    <input type="number" name="kg" min='1'>
+    <br>
+    <button type="submit">我要購買</button>
+</form>
+</body>
+</html>

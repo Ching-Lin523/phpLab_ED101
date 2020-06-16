@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>傳送表單出去</title>
+    <style>
+        form{
+            margin: 0 auto;
+            background: #0082bc;
+            width: 500px;
+            padding: 1rem;
+            border-radius: 10px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif,微軟正黑體;
+        }
+        input,label{
+            font-size: 1rem;
+            padding: 0.2rem;
+            margin: 0.5rem;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- GET方式 -->
+    <!-- action連線方式要透過URL才有效  http://localhost/phpLab_ED101/01member.html   -->
+    <form method="GET" action="01memberShow.php">
+        <h1>填寫表單</h1>
+        姓名 : <input  type="text" name="memName" size="20"><br>
+        帳號 : <input  type="text" name="memId" size="20" maxlength="8">最多8個文數字<br>
+        密碼 : <input  type="password" name="memPsw" size="20" maxlength="8">最多8個文數字<br>
+        信箱 : <input  type="email" name="memEmail" size="20" ><br>
+
+        <div>
+            性別 :
+            <input type="radio" name="memGender" id="option1" checked>
+            <label for="option1">男</label>
+            <input type="radio" name="memGender" id="option2">
+            <label for="option2">女</label>
+        </div>
+        生日 : <input type="date" name="memBday"><br>
+        聯絡電話 :<input type="text" name="memTel" size="20"><br>
+        
+        <input type="submit" value="新增">
+        <input type="reset" value="清除表單">
+    </form>
+
+
+
+    <!-- POST方式 -->
+    <!-- <form method="POST" action="login.php">
+            帳號 : <input  type="text" name="memId" size="8" maxlength="6"><br>
+            密碼 : <input  type="password" name="memPsw" size="8" maxlength="6"><br>
+            <input type="submit" value="送出">
+    </form> -->
+
+
+
+</body>
+</html>

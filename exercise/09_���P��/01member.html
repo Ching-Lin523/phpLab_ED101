@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    form{
+        border: 1px solid black;
+        width: 30%;
+        margin-left: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+    .line{
+        display: flex;
+    }
+    .text{
+        width: 20%;
+        /* border: 1px solid black; */
+        padding-right:10%;
+    }
+    input{
+        /* border: 1px solid black; */
+        width: 70%;
+    }
+    .radio{
+        width: 5%;
+        /* border: 1px solid black; */
+    }
+    #GO{
+        width: 30%;
+        margin-top: 5px;
+        margin-left: 35%;
+    }
+</style>
+
+</head>
+<body>
+    <form method="GET" action="01memberShow.php">
+
+        
+        <div class="line"><div class="text">姓名：</div><input type="text" name="memName" size="8" maxlength="6"></div>
+        <div class="line"><div class="text">帳號：</div><input type="text" name="memId" size="8" maxlength="6"></div>
+        <div class="line"><div class="text">密碼：</div><input type="password" name="memPsw" size="8" maxlength="6"></div>
+        <div class="line"><div class="text">Email：</div><input type="text" name="email" size="8" maxlength="6"></div>
+        <div class="line"><div class="text">性別：</div><input type="radio" name="sex" value="男" class="radio"> 男
+                                                        <input type="radio" name="sex" value="女" class="radio"> 女</div>
+        <div class="line"><div class="text">生日：</div><input type="text" name="birthday" size="8" maxlength="6"></div>
+        <div class="line"><div class="text">電話：</div><input type="text" name="tel" size="8" maxlength="6"></div>
+
+        <input type="submit" value="GO" id="GO">
+    </form>
+</body>
+</html>

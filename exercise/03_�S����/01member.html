@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            width: 900px;
+            margin: 0 auto;
+        }
+        table{
+            width: 100%;
+            border: 1px solid gray;
+        }
+        td{
+            border: 1px solid gray;
+        }
+        input{
+            width: 150px;
+        }
+        input#sex{
+            width: 20px;
+        }
+        input#sex2{
+            width: 20px;
+        }
+        #button{
+            
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="01memberShow.php">
+        <h1>申請會員</h1>
+        <table>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" name="memName" size="8" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td>帳號：</td>
+                <td><input type="text" name="memId" size="8" maxlength="8">最多8個英文或數字</td>
+            </tr>
+            <tr>
+                <td>密碼：</td>
+                <td><input type="password" name="memPsw" size="8" maxlength="8">最多8個英文或數字</td>
+            </tr>
+            <tr>
+                <td>e-mail：</td>
+                <td><input type="email" name="email" ></td>
+             </tr>
+             <tr>
+                <td>性別：</td>
+                <td><input type="radio" value="man" id='sex' name="sex" checked>
+                    <label for="sex">男</label>
+                    <input type="radio" value="woman" id='sex2' name="sex" >
+                    <label for="sex2">女</label>
+                </td>
+             </tr>
+             <tr>
+                <td>生日：</td>
+                <td><input type="date" name="birthday"></td>
+            </tr>
+            <tr>
+                <td>連絡電話：</td>
+                <td><input type="text" name="tel"></td>
+            </tr>
+        </table>
+        <input type="submit" id="button" value="送出">
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <title>申請會員</title>
+    <style>
+      *{
+        font-family: Microsoft JhengHei;
+        letter-spacing: 2px;
+      }
+      fieldset{
+        padding: 15px;
+        padding-left: 30px;
+        width: 280px;
+        margin: 0 auto;
+      }
+      legend{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      input[name="mail"]{
+        margin: 5px;
+        margin-left: 27px;
+        margin-bottom: 10px;
+      }
+      input[name="phone"]{
+        margin: 5px;
+        margin-left: 14px;
+      }
+      input[name="name"], input[name="account"], input[name="password"], input[name="sex"], input[name="birth"]{
+        margin: 5px;
+        margin-left: 50px;
+      }
+      input[name="birth"]{
+        margin-top: 10px;
+      }
+      input[type="submit" ], input[type="reset"]{
+        margin: 5px;
+        margin-top: 20px;
+        padding: 3px 20px 3px;
+        cursor: pointer;
+      }
+      input[type="submit" ]{
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>申請會員</legend>
+      <form class="" action="01memberShow.php" method="post">
+        姓名: <input type="text" name="name" autocomplete="off"> <br>
+        帳號: <input type="text" name="account" maxlength="8" autocomplete="off"> <br>
+        密碼: <input type="text" name="password" maxlength="8" autocomplete="off"> <br>
+        e-mail: <input type="text" name="mail" autocomplete="off"> <br>
+        性別: <input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女">女 <br>
+        生日: <input type="text" name="birth" placeholder="YYYY/MM/DD" autocomplete="off"> <br>
+        連絡電話: <input type="text" name="phone" autocomplete="off"> <br>
+        <input type="submit" value="新增">
+        <input type="reset" value="重新設定">
+      </form>
+    </fieldset>
+  </body>
+</html>

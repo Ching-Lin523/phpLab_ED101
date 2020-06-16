@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 2px solid skyblue;
+            display: inline-block;
+
+            /* text-align: center; */
+            position: relative;
+            margin-top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px;
+        }
+
+        .total {
+            /* border: 2px solid orange; */
+            display: inline-block;
+            margin: auto;
+        }
+
+        .btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form method="get" action="02_orangeIf.php">
+        <h3>計算橘子等級與公斤數</h3>
+        等級：<input type="text" name="class">
+        <br>
+        <br>
+        公斤：<input type="text" name="kg">
+        <br>
+        <br>
+
+        <div class="btn">
+            <input type="submit" value="計算">
+            <input type="reset" value="重整">
+
+        </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

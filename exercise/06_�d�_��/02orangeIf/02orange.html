@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02orange</title>
+    <style>
+      label {
+        width: 150px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        width: 61px;
+      }
+      input[type="submit"] {
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="get" action="02orangeIf.php">
+      <label for="class">請選擇橘子等級：</label>
+      <select name="class" id="class" required>
+        <option value="" disabled selected>請選擇</option>
+        <option value="no1">1</option>
+        <option value="no2">2</option>
+        <option value="no3">3</option> </select
+      ><br />
+      <label for="kg">請輸入購買公斤數：</label>
+      <input type="text" id="kg" name="kg" required />公斤 <br /><input
+        type="submit"
+      />
+    </form>
+  </body>
+</html>

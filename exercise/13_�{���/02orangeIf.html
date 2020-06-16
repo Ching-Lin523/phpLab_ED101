@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Sale</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            border: 3px solid steelblue;
+            width: 350px;
+            margin: 0 auto;
+            line-height: 30px;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        div.kg {
+            width: 350px;
+        }
+
+        p {
+            width: 20px;
+            display: inline-block;
+
+        }
+
+        div.submit {
+            width: 60px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="02orangeIf.php" method="POST">
+        <fieldset>
+            <legend>Orange sale</legend>
+            <div>
+                <label>Level: </label>
+                <select name="level">
+                    <option name="level">Level 1</option>
+                    <option name="level">Level 2</option>
+                    <option name="level">Level 3</option>
+                </select>
+            </div>
+            <div class="kg">
+                <label>Enter Kilogram: </label>
+                <input type="number" name="kg" id="kg">
+                <p>kg</p>
+            </div>
+            <div class="submit">
+                <input type="submit" value="submit" id="submit">
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

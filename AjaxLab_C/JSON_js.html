@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+
+</head>
+<body>
+
+<h2>JSON.stringify()</h2>
+<script type="text/javascript">
+var emp = {
+	empNo : "7001",
+	empName : "Adam",
+	salary : 36000,
+	phone : ["03-4257387", "0933-168168", "03-168168"]
+}
+
+document.write( JSON.stringify(emp), "<br>");	
+</script>   
+
+
+<h2>JSON.parse()</h2>
+<script type="text/javascript">
+var str = '{"empNo":"7001","empName":"Adam","salary":36000,"phone":["03-4257387","0933-168168","03-168168"]}';
+var obj = JSON.parse(str);
+
+document.write( "obj.empNo : ", obj.empNo, "<br>");	
+document.write( "obj.empName : ", obj.empName, "<br>");	
+document.write( "obj.salary : ", obj.salary, "<br>");	
+document.write( "obj.phone[0] : ", obj.phone[0], "<br>");
+document.write( "obj.phone : ", obj.phone, "<br>"); //03-4257387,0933-168168,03-168168
+</script>   
+
+
+
+<h2>JSON.stringify()...............2</h2>
+<script type="text/javascript">
+var emp = {
+	empNo : "7001",
+	empName : "Adam",
+	salary : 36000,
+	phone : {
+		O : "03-4257387",
+		M : "0933-168168",
+		H : "03-168168"
+	}
+}
+
+document.write( JSON.stringify(emp), "<br>");	
+</script>   
+
+
+<h2>JSON.parse()...............2</h2>
+<script type="text/javascript">
+var str = '{"empNo":"7001","empName":"Adam","salary":36000,"phone":{"O":"03-4257387","M":"0933-168168","H":"03-168168"}}';
+var obj = JSON.parse(str);
+
+document.write( "obj.empNo : ", obj.empNo, "<br>");	
+document.write( "obj.empName : ", obj.empName, "<br>");	
+document.write( "obj.salary : ", obj.salary, "<br>");	
+document.write( "obj.phone.O : ", obj.phone.O, "<br>");
+document.write( "obj.phone.M : ", obj.phone.M, "<br>");
+document.write( "obj.phone : ", obj.phone, "<br>"); //[object Object]
+</script>   
+</body>
+</html>

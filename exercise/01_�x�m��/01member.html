@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_member</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        input{
+            padding-left: 10px;
+            border: 1px solid;
+        }
+        .btn{
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+            width: 60px;
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="01memberShow.php" method="GET">
+        <label for="memName">姓名:
+            <input type="text" id="memName" name="memName" size="8" maxlength="12">
+        </label>
+        <label for="memId">帳號:
+            <input type="text" id="memId" name="memId" size="8" maxlength="12">
+        </label>
+        <label for="memPsw">密碼:
+            <input type="password" id="memPsw" name="memPsw" size="8" maxlength="12">
+        </label>
+        <label for="email">email:
+            <input type="email" id="email" name="email" size="8" maxlength="20">
+        </label>
+        <label for="sex">性別:
+            <input type="text" id="sex" name="sex" size="8" maxlength="12">
+        </label>
+        <label for="birthday">生日:
+            <input type="text" id="birthday" name="birthday" size="8" maxlength="12">
+        </label>
+        <label for="tel">連絡電話:
+            <input type="text" id="tel" name="tel" size="8" maxlength="12">
+        </label>
+        <input type="submit" value="GO!" class="btn">
+    </form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <style>
+    table tr td{
+        border: solid 1px black;
+    }
+    table{
+        border: solid 1px black;
+        width: 800px; 
+    } 
+    </style>
+</head>
+<body>
+    <h1>申請會員</h1>
+    <form method="post" action="./02memberShow.php"">
+    <table>
+        <tr>
+            <td>
+                姓名
+            </td>
+            <td>
+                <input type="text" name="memName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                帳號
+            </td>
+            <td>
+                <input type="text" name="memId" size="8" maxlength="6">最多8個文數字
+            </td>
+        </tr>
+        <tr>
+            <td>
+                密碼
+            </td>
+            <td>
+                <input type="password" name="memPsw" size="8" maxlength="6">最多8個文數字
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-mail
+            </td>
+            <td>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                性別
+            </td>
+            <td>
+                <input type="radio" name="sex" value="男">男
+
+                <label><input type="radio" name="sex" value="女">女</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                生日
+            </td>
+            <td>
+                <input type="text" name="birthday">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                聯絡電話
+            </td>
+            <td>
+                <input type="text" name="tel">
+            </td>
+        </tr>
+    </table>
+    <button type="submit">新增</button>
+    <button>重新設定</button>
+    </form>
+    
+</body>
+</html>

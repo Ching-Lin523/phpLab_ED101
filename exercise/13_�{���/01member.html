@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Member</title>
+    <script src="01memberShow.php"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        fieldset {
+            margin: 0 auto;
+            width: 500px;
+            background-color: rgb(153, 194, 227);
+        }
+
+        table {
+            border: 1px sold steelblue;
+
+        }
+
+        div.btn {
+            width: 20%;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>申請會員</h2>
+    <fieldset>
+        <form method="post" action="01memberShow.php">
+            <table>
+                <tr>
+                    <td>姓名：</td>
+                    <td><input method="post" type="text" name="memName"></td>
+                </tr>
+                <tr>
+                    <td>帳號：</td>
+                    <td><input method="post" type="text" name="memId"></td>
+                </tr>
+                <tr>
+                    <td>密碼：</td>
+                    <td><input method="post" type="password" name="memPsw"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>性別：</td>
+                    <td>男<input type="radio" name="gendar" value="男">女<input type="radio" name="gendar" value="女">
+                    </td>
+                </tr>
+                <tr>
+                    <td>生日:</td>
+                    <td><input type="text" placeholder="YYYY/MM/DD" name="birthday"></td>
+                </tr>
+                <tr>
+                    <td>聯絡電話:</td>
+                    <td><input type="text" name="tel"></td>
+                </tr>
+            </table>
+            <div class="btn">
+                <input method="post" type="reset" value="取消"><input method="post" type="submit" value="送出">
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>

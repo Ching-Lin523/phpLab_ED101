@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+h1{
+    color:black;
+    font-size: xx-large;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.block1{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.block2{
+    border: 1px solid gray;
+    width: 50%;
+    margin: 2px;
+}
+.block3 {
+    width: 150x;
+    border: 1px solid red;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}

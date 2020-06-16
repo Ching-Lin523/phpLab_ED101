@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method='get' action="02memberShow.php">
+        <label for="userName" class='formLabel'>
+            <span>姓名：</span>
+            <input type="text" id='userName' name='userName'>
+        </label>
+
+        <label for="id" class='formLabel'>
+            <span>帳號：</span>
+            <input type="text" id='id' name='id'>
+        </label>
+
+        <label for="password" class='formLabel'>
+            <span>密碼：</span>
+            <input type="text" id='password' name='password'>
+        </label>
+
+        <label for="mail" class='formLabel'>
+            <span>Email：</span>
+            <input type="text" id='mail' name='mail'>
+        </label>
+
+        <label for="gender" class='formLabel'>
+            <span>性別：</span>
+            <label class="genderLabel"><input type="radio" name="gender" value='male' checked>男</label>
+            <label class="genderLabel"><input type="radio" name="gender" value='female'>女</label>
+        </label>
+
+        <label for="birthday" class='formLabel'>
+            <span>生日：</span>
+            <input type="date" id='birthday' name='birthday'>
+        </label>
+
+        <label for="phone" class='formLabel'>
+            <span>電話：</span>
+            <input type="text" id='phone' name='phone'>
+        </label>
+
+        <input class='submitBtn' type="submit" value="送出">
+    </form>
+    
+</body>
+</html>
